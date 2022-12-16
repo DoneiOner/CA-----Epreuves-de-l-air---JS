@@ -19,10 +19,11 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 
 // GESTION D'ERREURS
-if (process.argv.length > 4 || process.argv[2] == undefined || process.argv[3] == undefined) {
+if (process.argv.length > 4 || process.argv[2] == undefined )/*|| process.argv[3] == undefined)*/ {
     console.log('Erreur.');
     process.exit(0);
 }
+if(process.argv[3] == undefined){console.log('erreur2'); process.exit(0);}
 
 
 
@@ -43,7 +44,7 @@ function decoupage(chaine, separator) {
     //console.log(array);
 
     for (let i = 0; i < array.length; i++) {
-        console.log(array[i]);        
+        console.log(`${array[i]}`);        
     }
 }
 

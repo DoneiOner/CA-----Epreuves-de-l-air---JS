@@ -1,5 +1,6 @@
 /*               SUR CHACUN D'ENTRE EUX
-Créez un programme qui est capable de reconnaître et de faire une opération (addition ou soustraction) sur chaque entier d’une liste.
+Créez un programme qui est capable de reconnaître et de faire une opération (addition ou soustraction)
+ sur chaque entier d’une liste.
 Exemples d’utilisation :
 $> ruby exo.rb 1 2 3 4 5 “+2”
 3 4 5 6 7
@@ -14,7 +15,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 // GESTION D'ERREURS - PARSING :
 function error() {
-    console.log('Erreur2.');
+    console.log('Erreur.');
     process.exit(0);
 }
 
@@ -28,16 +29,13 @@ for (let index = 2; index < process.argv.length-1; index++) {
     error();
 }
 }
-
 let dernierElement = process.argv[process.argv.length-1];
 let operateur = dernierElement.substring(0, 1);
 let nombreOperant = Number(dernierElement.slice(1));
-console.log(operateur);
-
+//console.log(operateur);
 if (operateur != "+" && operateur != "-") {
     error();
 }
-
 if (isNaN(nombreOperant)) {
     error();
 }

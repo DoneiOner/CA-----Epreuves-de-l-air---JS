@@ -36,6 +36,7 @@ for (let index = 2; index < process.argv.length; index++) {
 };
 
 let discriminant = array[array.length-1];
+let discriminantCapitale = discriminant.toUpperCase();
 //console.log(discriminant);
 
 let array2 = [];
@@ -43,7 +44,7 @@ let array2 = [];
 // RESOLUTION : 
 function eraseDoublons (array, discriminant) {
 for (let index = 0; index < array.length-1; index++) {
-	if (!array[index].includes(discriminant)) {
+	if (!array[index].includes(discriminant) && !array[index].includes(discriminantCapitale)) {
 		array2.push(array[index]);	
 }
 };
@@ -53,6 +54,6 @@ eraseDoublons(array, discriminant);
 
 // AFFICHAGE :
 for (let index = 0; index < array2.length; index++) {
-	process.stdout.write(`${array2[index]}` + ' ');
+	process.stdout.write(`${array2[index]} `);
 }
-console.log(' ');
+console.log('');

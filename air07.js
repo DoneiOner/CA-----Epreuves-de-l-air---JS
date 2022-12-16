@@ -1,5 +1,6 @@
 /*                  INSERTION DANS UN TABLEAU TRIÉ
-Créez un programme qui ajoute à une liste d’entiers triée un nouvel entier tout en gardant la liste triée dans l’ordre croissant. Le dernier argument est l’élément à ajouter.
+Créez un programme qui ajoute à une liste d’entiers triée un nouvel entier tout en gardant la liste triée dans l’ordre croissant. 
+Le dernier argument est l’élément à ajouter.
 Utilisez une fonction de ce genre (selon votre langage) :
 sorted_insert(array, new_element) {
 	# your algo
@@ -48,7 +49,8 @@ for (let index = 2; index < process.argv.length-1; index++) {
 //console.log(array);
 //console.log(nombreAAjouter);
 
-// NOUVELLE GESTION D'ERREUR : le user a t-il entré une liste non triée ( on la met a cet endroit du code pour beneficier du parsing avec parseInt() sans redondance)
+// NOUVELLE GESTION D'ERREUR : le user a t-il entré une liste non triée 
+// ( on la met a cet endroit du code pour beneficier du parsing avec parseInt() sans redondance)
 for (let index = 2; index < process.argv.length-2; index++) {
 	if (process.argv[index] > process.argv[index+1]) {
 		console.log("Dis moi pas que t'essayes de me la mettre !?!");
@@ -77,4 +79,4 @@ sortedInsert(nombreAAjouter, array);
 for (let index = 0; index < array.length; index++) {
 	process.stdout.write(array[index] + " ");	 
 }
-console.log(" ");
+console.log('');

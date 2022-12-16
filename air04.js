@@ -29,5 +29,5 @@ for (let index = 0; index < chaine.length; index++) {
 };
 return array;
 }
-
-console.log(notTwice(chaine));
+let result = notTwice(chaine).join('');
+console.log(result);
