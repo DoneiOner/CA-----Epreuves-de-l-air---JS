@@ -1,3 +1,5 @@
+
+
 /*                  SPLIT
 Créez un programme qui découpe une chaîne de caractères en tableau (séparateurs : espaces, tabulations, retours à la ligne).
 Votre programme devra utiliser une fonction prototypée comme ceci :
@@ -23,21 +25,15 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 
 
-
 // GESTION D'ERREURS
 if (process.argv.length > 3 || process.argv[2] == undefined) {
     console.log('Erreur.');
     process.exit(0);
 }
-
-
-
-
 // PARSING
 let chaine = process.argv[2];
 //console.log(chaine);
-
-"a=b,c:d".split('=').join(',').split(':').join(',').split(',')
+"a=b,c:d".split('=').join(',').split(':').join(',').split(',');
 
 
 // FONCTION
